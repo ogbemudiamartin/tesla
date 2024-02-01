@@ -1,0 +1,209 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition:  background 1s ease-in-out;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/tesla3.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100vh;
+    padding: 0 7%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    height: 99px;
+    width: 170px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: medium;
+    color:#fff;
+}
+li a:focus{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.8);
+}
+nav ul .btn{
+color: #fff;
+text-decoration: none;
+border: 1px solid #fff;
+padding: 15px 2rem;
+border-radius: 30px;
+margin-left: 7rem;
+margin-right: 20px;
+
+}
+nav ul .btn:hover{
+    background-color: rgba(20, 1, 1, 0.1);
+    color: rgb(255, 255, 255);
+
+}
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+.info div{
+    margin: 0 20px;
+}
+
+.info div h2{
+    font-weight: 400;
+    font-size: 44px;
+}
+
+.info .line{
+    flex: 1;
+    background-color: #fff;
+    height: 4px;
+}
+
+.menu{
+    position: fixed;
+    right: 0;
+    padding: 0 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: cursive;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 30%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+      
+        background: rgb(70, 68, 68, .4);
+        gap: 1rem;
+    
+    }
+
+    nav  .activeNav{
+        top: 4rem;
+   right: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+    nav  ul .btn{
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 5px 1.5rem;
+        width: 90%;
+        border-radius: 20px;
+        margin-right: 6rem;
+        
+        }
+
+        .info div{
+            margin: 0 20px;
+        }
+        
+        .info div h2{
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .menu{
+            display: block;
+        }
+        .logo{
+            width: 140px;
+            margin-left: 2rem;
+        }
+}
+
+@media (max-width: 480px){
+    nav ul{
+        width: 50%;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+    nav  ul .btn{
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 5px 1.5rem;
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 6rem;
+        
+        }
+
+        .info div{
+            margin: 0 5px;
+        }
+        
+        .info div h2{
+            font-weight: 400;
+            font-size: 23px;
+        }
+        .menu{
+            display: block;
+        }
+        .logo{
+            width: 120px;
+            margin-left: 1rem;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: url(./img/tesla3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+}
